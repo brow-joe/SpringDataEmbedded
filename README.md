@@ -1,0 +1,2 @@
+# SpringDataEmbedded
+SpringDataEmbedded

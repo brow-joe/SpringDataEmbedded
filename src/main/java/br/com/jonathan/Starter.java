@@ -1,4 +1,4 @@
-package br.com;
+package br.com.jonathan;
 
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
@@ -9,14 +9,14 @@ import org.springframework.cloud.netflix.feign.EnableFeignClients;
 import org.springframework.context.annotation.ComponentScan;
 
 @EnableAutoConfiguration
-@ComponentScan( "br.com" )
+@ComponentScan("br.com.jonathan")
 @EnableFeignClients
 @EnableCircuitBreaker
-public class Main{
-	protected static final Logger LOGGER = LogManager.getLogger( Main.class );
+public class Starter {
+	protected static final Logger LOGGER = LogManager.getLogger(Starter.class);
 
-	public static void main( String[ ] args ) {
-		SpringApplication.run( Main.class, args );
-		LOGGER.info( "... server starter ..." );
+	public static void main(String[] args) {
+		SpringApplication.run(Starter.class, args);
+		LOGGER.info("... server starter ...");
 	}
 }

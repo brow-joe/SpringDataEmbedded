@@ -11,4 +11,4 @@ endpoints:
     
 spring:
   application:
-    name: sdderby
+    name: sdderbyh2
